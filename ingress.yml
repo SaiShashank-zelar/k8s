@@ -16,7 +16,7 @@ spec:
                 port:
                   number: 3000
 
-          - path: /api/customers
+          - path: /customers
             pathType: Prefix
             backend:
               service:
