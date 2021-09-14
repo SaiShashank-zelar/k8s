@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: sheshuvalandas/helloworld
+          ports:
+            - containerPort: 8080
+          env:
+            - name: database
+              value: loizenaidb
+            - name: username
+              value: postgres
+            - name: password
+              value: "123"
+            - name: host
+              value: postgres
+            - name: dialect
+              value: postgres
