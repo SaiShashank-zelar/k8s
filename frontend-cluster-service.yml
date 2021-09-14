@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello
+  name: frontend
   labels:
-    app: hello
+    app: frontend
 spec:
   type: ClusterIP
   ports:
