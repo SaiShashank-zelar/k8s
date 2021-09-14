@@ -24,6 +24,6 @@ spec:
             - name: password
               value: "123"
             - name: host
-              value: localhost
+              value: postgres-cluster-service
             - name: dialect
               value: postgres
