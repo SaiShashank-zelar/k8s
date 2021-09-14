@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: sheshuvalandas/helloworld
+          image: postgres:latest
           ports:
             - containerPort: 5432
           env:
