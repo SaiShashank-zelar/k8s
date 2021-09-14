@@ -24,6 +24,6 @@ spec:
             - name: password
               value: "123"
             - name: host
-              value: postgres
+              value: localhost
             - name: dialect
               value: postgres
