@@ -14,5 +14,6 @@ spec:
       containers:
         - name: frontend
           image: sheshuvalandas/front
+          stdin_open: true
           ports:
             - containerPort: 3000
