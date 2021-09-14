@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sheshuvalandas/front
+          image: sheshuvalandas/frontend-react
           stdin: true
           ports:
             - containerPort: 3000
