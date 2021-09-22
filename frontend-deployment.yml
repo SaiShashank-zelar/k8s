@@ -13,7 +13,10 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sheshuvalandas/frontend-react
+          image: sheshuvalandas/frontend
           stdin: true
           ports:
             - containerPort: 3000
+          env:
+            - name: CONTAINER_NAME
+            - value: http://backend-cluster-service:8080

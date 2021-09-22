@@ -13,17 +13,17 @@ spec:
     spec:
       containers:
         - name: backend
-          image: sheshuvalandas/backend-node
+          image: sheshuvalandas/backend
           ports:
             - containerPort: 8080
           env:
-            - name: database
+            - name: PGDATABASE
               value: loizenaidb
-            - name: username
+            - name: PGUSER
               value: postgres
-            - name: password
-              value: "123"
-            - name: host
+            - name: PGPASS
+              value: "234"
+            - name: PGHOST
               value: postgres-cluster-service
-            - name: dialect
+            - name: PGDIALECT
               value: postgres
