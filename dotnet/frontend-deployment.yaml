@@ -13,7 +13,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: sheshuvalandas/frontend-kube #ip #servicename - 3.3
+        - image: sheshuvalandas/frontend-kube
           name: frontend
           stdin: true
           tty: true
